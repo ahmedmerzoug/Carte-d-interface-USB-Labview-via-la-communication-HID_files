@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0064)http://www.technologuepro.com/userfiles/image/montages/piki.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>mikroIDE</title>
+
+<meta name="generator" content="SynEdit HTML exporter">
+<style type="text/css">
+<!--
+body { color: #000000; background-color: #FFFFFF; }
+body { font-family: Courier New; font-size: 14pt; }
+.pas1-activecomment { color: #316AC5; font-style: italic; text-decoration: underline; }
+.pas1-assembler { color: #FF0000; }
+.pas1-binary { color: #800000; }
+.pas1-character { color: #808000; }
+.pas1-comment { color: #008000; font-style: italic; }
+.pas1-float { color: #800000; }
+.pas1-hexadecimal { color: #008000; }
+.pas1-identifier { color: #000000; }
+.pas1-imagelink { color: #800080; font-style: italic; text-decoration: underline; }
+.pas1-label { color: #800080; }
+.pas1-number { color: #008000; }
+.pas1-preprocessor { color: #8000FF; font-style: italic; }
+.pas1-reservedword { color: #000000; font-weight: bold; }
+.pas1-space { color: #ECE9D8; }
+.pas1-string { color: #0000FF; }
+.pas1-symbol { color: #000000; }
+.pas1-weblink { color: #316AC5; font-style: italic; text-decoration: underline; }
+-->
+</style>
+<style type="text/css"></style></head>
+<body>
+<!--StartFragment--><pre><code><span class="pas1-reservedword">program</span><span class="pas1-space">&nbsp;</span><span class="pas1-identifier">piki;
+</span><span class="pas1-reservedword">uses</span><span class="pas1-space">&nbsp;</span><span class="pas1-identifier">USBdsc;
+</span><span class="pas1-reservedword">var</span><span class="pas1-space">&nbsp;</span><span class="pas1-identifier">readbuff</span><span class="pas1-space">&nbsp;</span><span class="pas1-symbol">:</span><span class="pas1-space">&nbsp;</span><span class="pas1-reservedword">array</span><span class="pas1-symbol">[</span><span class="pas1-number">64</span><span class="pas1-symbol">]</span><span class="pas1-space">&nbsp;</span><span class="pas1-reservedword">of</span><span class="pas1-space">&nbsp;</span><span class="pas1-identifier">char;</span><span class="pas1-space">&nbsp;</span><span class="pas1-reservedword">absolute</span><span class="pas1-space">&nbsp;</span><span class="pas1-hexadecimal">0x500</span><span class="pas1-symbol">;
+</span><span class="pas1-reservedword">var</span><span class="pas1-space">&nbsp;</span><span class="pas1-identifier">writebuff</span><span class="pas1-space">&nbsp;</span><span class="pas1-symbol">:</span><span class="pas1-space">&nbsp;</span><span class="pas1-reservedword">array</span><span class="pas1-symbol">[</span><span class="pas1-number">64</span><span class="pas1-symbol">]</span><span class="pas1-space">&nbsp;</span><span class="pas1-reservedword">of</span><span class="pas1-space">&nbsp;</span><span class="pas1-identifier">char;</span><span class="pas1-space">&nbsp;</span><span class="pas1-reservedword">absolute</span><span class="pas1-space">&nbsp;</span><span class="pas1-hexadecimal">0x540</span><span class="pas1-symbol">;
+</span><span class="pas1-reservedword">procedure</span><span class="pas1-space">&nbsp;</span><span class="pas1-identifier">Interrupt();
+</span><span class="pas1-reservedword">begin
+</span><span class="pas1-space">&nbsp;&nbsp;&nbsp;</span><span class="pas1-identifier">USB_Interrupt_Proc();
+</span><span class="pas1-reservedword">end</span><span class="pas1-symbol">;
+</span><span class="pas1-reservedword">begin
+</span><span class="pas1-space">&nbsp;&nbsp;</span><span class="pas1-identifier">trisd:=</span><span class="pas1-hexadecimal">0x00</span><span class="pas1-symbol">;
+</span><span class="pas1-space">&nbsp;&nbsp;</span><span class="pas1-identifier">portd:=</span><span class="pas1-number">0</span><span class="pas1-symbol">;
+</span><span class="pas1-space">&nbsp;&nbsp;</span><span class="pas1-identifier">trisa:=</span><span class="pas1-hexadecimal">0xff</span><span class="pas1-symbol">;
+</span><span class="pas1-space">&nbsp;&nbsp;</span><span class="pas1-identifier">trisc:=</span><span class="pas1-hexadecimal">0x00</span><span class="pas1-symbol">;
+</span><span class="pas1-space">&nbsp;&nbsp;</span><span class="pas1-identifier">portc:=</span><span class="pas1-number">0</span><span class="pas1-symbol">;
+</span><span class="pas1-space">&nbsp;&nbsp;</span><span class="pas1-identifier">trisb:=</span><span class="pas1-hexadecimal">0xff</span><span class="pas1-symbol">;
+</span><span class="pas1-space">&nbsp;&nbsp;</span><span class="pas1-identifier">portb:=</span><span class="pas1-number">0</span><span class="pas1-symbol">;
+</span><span class="pas1-space">&nbsp;&nbsp;</span><span class="pas1-identifier">CMCON:=</span><span class="pas1-number">7</span><span class="pas1-symbol">;
+</span><span class="pas1-space">&nbsp;&nbsp;</span><span class="pas1-identifier">delay_ms(</span><span class="pas1-number">100</span><span class="pas1-symbol">)</span><span class="pas1-space">&nbsp;</span><span class="pas1-symbol">;
+</span><span class="pas1-space">&nbsp;&nbsp;</span><span class="pas1-identifier">HID_Enable(@readbuff,@writebuff);
+</span><span class="pas1-space">&nbsp;&nbsp;</span><span class="pas1-reservedword">while</span><span class="pas1-space">&nbsp;</span><span class="pas1-identifier">TRUE</span><span class="pas1-space">&nbsp;</span><span class="pas1-reservedword">do</span><span class="pas1-space">&nbsp;
+&nbsp;&nbsp;</span><span class="pas1-reservedword">begin
+</span><span class="pas1-space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pas1-identifier">HID_Read();
+</span><span class="pas1-space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pas1-identifier">portd:=readbuff[</span><span class="pas1-number">0</span><span class="pas1-symbol">];
+</span><span class="pas1-space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pas1-identifier">writebuff[</span><span class="pas1-number">0</span><span class="pas1-symbol">]:=adc_read(</span><span class="pas1-number">0</span><span class="pas1-symbol">)</span><span class="pas1-reservedword">shr</span><span class="pas1-space">&nbsp;</span><span class="pas1-number">2</span><span class="pas1-symbol">;
+</span><span class="pas1-space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pas1-identifier">delay_ms(</span><span class="pas1-number">30</span><span class="pas1-symbol">);
+</span><span class="pas1-space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pas1-reservedword">while</span><span class="pas1-space">&nbsp;</span><span class="pas1-symbol">(</span><span class="pas1-space">&nbsp;</span><span class="pas1-identifier">HID_Write(@writebuff,</span><span class="pas1-number">2</span><span class="pas1-symbol">)=</span><span class="pas1-space">&nbsp;</span><span class="pas1-number">0</span><span class="pas1-symbol">)</span><span class="pas1-space">&nbsp;</span><span class="pas1-reservedword">do</span><span class="pas1-symbol">;
+</span><span class="pas1-space">&nbsp;&nbsp;</span><span class="pas1-reservedword">end</span><span class="pas1-symbol">;
+</span><span class="pas1-reservedword">end</span><span class="pas1-symbol">.
+</span></code></pre><!--EndFragment-->
+</body></html>

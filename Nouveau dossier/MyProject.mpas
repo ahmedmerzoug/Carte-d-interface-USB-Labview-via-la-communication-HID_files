@@ -1,0 +1,27 @@
+program piki;
+var readbuff : array[64] of char; absolute 0x500;
+var writebuff : array[64] of char; absolute 0x540;
+procedure Interrupt();
+begin
+   USB_Interrupt_Proc();
+end;
+begin
+  trisd:=0x00;
+  portd:=0;
+  trisa:=0xff;
+  trisc:=0x00;
+  portc:=0;
+  trisb:=0xff;
+  portb:=0;
+  CMCON:=7;
+  delay_ms(100) ;
+  HID_Enable(@readbuff,@writebuff);
+  while TRUE do
+  begin
+       HID_Read();
+       portd:=readbuff[0];
+       writebuff[0]:=adc_read(0)shr 2;
+       delay_ms(30);
+       while ( HID_Write(@writebuff,2)= 0) do;
+  end;
+end.

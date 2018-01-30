@@ -1,0 +1,94 @@
+;===========================================================================
+;
+;  This file is for use with Windows 98SE/ME, Windows 2000, or Windows XP.
+;  This WDM Windows Setup Information File contains the information NI-VISA
+;  needs in order to access your instrument.  Do not modify the contents of
+;  this file unless you are sure about what you are doing.
+;
+;  To apply the contents of this file to a system's settings, copy this file
+;  to %SystemRoot%\inf and reboot the computer.  If the device was
+;  installed before this file is copied, the device will need to be removed
+;  from the "Unknown Devices" class in the Windows Device Manager
+;
+;===========================================================================
+
+[Version]
+Signature=$CHICAGO$
+Class=visaUsbDevice
+ClassGUID={A3330EDF-239D-4206-833B-1D58952613D5}
+ClassName="visaUsbDevice"
+Provider=%Vendor0%
+LayoutFile=layout.inf
+
+;===========================================================================
+;   Class Installer
+;===========================================================================
+
+[ClassInstall32]
+AddReg=AddClassToRegistry
+
+[ClassInstall]
+AddReg=AddClassToRegistry
+
+[AddClassToRegistry]
+HKR,,,0,%DeviceClassString%
+HKR,,Icon,,-20
+
+;===========================================================================
+
+[Manufacturer]
+%Vendor1%=USBList
+
+;===========================================================================
+;   USB Plug and Play Devices
+;===========================================================================
+
+[USBList]
+%USB\VID_FFFF&PID_FFFF.DeviceDesc%=NIVIUSBK.Dev, USB\VID_FFFF&PID_FFFF
+
+;===========================================================================
+
+[PreCopySection]
+HKR,,NoSetupUI,,1
+
+[DestinationDirs]
+NIVIUSBK.Files.Ext = 10,System32\Drivers
+NIVIUSBK.Files.Inf = 10,INF
+
+[NIVIUSBK.Dev]
+;CopyFiles=NIVIUSBK.Files.Ext, NIVIUSBK.Files.Inf
+AddReg=NIVIUSBK.AddReg
+
+[NIVIUSBK.Dev.NT]
+;CopyFiles=NIVIUSBK.Files.Ext, NIVIUSBK.Files.Inf
+AddReg=NIVIUSBK.AddReg
+
+[NIVIUSBK.Dev.NT.Services]
+Addservice = NIVIUSBK, 0x00000002, NIVIUSBK.AddService
+
+[NIVIUSBK.AddService]
+DisplayName    = %NIVIUSBK.SvcDesc%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 2                  ; SERVICE_AUTO_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %10%\System32\Drivers\NIVIUSBK.sys
+LoadOrderGroup = Base
+
+[NIVIUSBK.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,NIVIUSBK.sys
+
+[NIVIUSBK.Files.Ext]
+NIVIUSBK.sys
+
+[NIVIUSBK.Files.Inf]
+NIVIUSBK.inf
+
+;===========================================================================
+
+[Strings]
+Vendor0="Your Manufacturer Name"
+Vendor1="Your Manufacturer Name"
+USB\VID_FFFF&PID_FFFF.DeviceDesc="Your Model Name"
+DeviceClassString="NI-VISA USB Devices"
+NIVIUSBK.SvcDesc="NI-VISA USB Driver"

@@ -1,0 +1,158 @@
+body{margin: 0%;padding: 0%;border-width: 0px;font-family: verdana, Arial, Sans-serif;color: #254394;font-size: 10px;background: url(http://www.technologuepro.com/themes/SP4XP/images/Arabisc.png);}
+img{vertical-align:top;padding:0px;margin:0px;border: 0px;border-spacing: 0px;border-collapse: collapse;}
+a, a:link, a:visited {color: #0F4DF3;text-decoration:none;font-weight:bold;font-size:10px;}
+a:hover, a:active {color:#FF1155;font-size:10px;}
+h1{font-family: Verdana,Arial,sans-serif;font-size: 12px;margin: 0px;padding: 0px;}
+h1 big{font-family: Verdana,Arial,sans-serif;font-size: 14px;margin: 0px;padding: 0px;}
+h2{font-family: Verdana,Arial,sans-serif;font-size: 12px;margin: 0px;padding: 0px;}
+h3{font-family: Arial,sans-serif;font-size: 10px;margin: 0px;padding: 0px;}
+h4{font-family: Arial,sans-serif;font-size: 10px;font-weight: normal;margin: 0px;padding: 0px;}
+h5{font-family: Verdana,Arial,sans-serif;font-size: 10px;margin: 0px;padding: 0px;}
+input, select, textarea ,form{font-family: Verdana, Arial, Sans-serif;font-size: 10px;font-weight:bold;}
+.both {clear: both;}
+div#header{height: 95px;background: url('http://www.technologuepro.com/themes/SP4XP/images/headerh.jpeg') repeat-x;background-position:-50px 0px;width: 950px;margin: auto;}
+div#baspage{background: url('http://www.technologuepro.com/themes/SP4XP/images/headerh.jpeg') repeat-x;background-position:0px -130px;width: 950px;margin: auto;}
+div#header div#titre{padding: 6px 0px 0px 10px;}
+div#menu{width: 950px;height: 50px;background: #FFFFFF;background-position:0px -99px;margin: auto;}
+div#menu div.boutons{padding: 3px 2% 3px 2%;float: left;width: 12%;}
+div#menu div#boutons2{padding: 3px 2% 3px 1%;float: left;}
+div#menu div#boutons3{padding: 3px 2% 3px 1%;float: left;}
+div#menu div#boutons4{padding: 3px 2% 3px 1%;float: left;}
+div#menu div#boutons5{padding: 3px 2% 3px 1%;float: left;}
+div#menu div#boutons6{padding: 3px 2% 3px 2%;float: left;}
+div#corps {width: 950px;margin: auto;}
+div#gauche{width: 20%;min-width: 150px;float: left;}
+div#fond{background: #FFFFFF;}
+div#centre{width: 62%;min-width: 300px;float: left;}	
+div#centreglobal{width: 80%;min-width: 300px;float: left;}	
+div#droite{width: 170px;float: left;}		
+div#hautFooter{width: 950px;height: 2px;background: url('http://www.technologuepro.com/themes/SP4XP/images/headerh.jpeg') repeat-x;background-position:0px -99px;margin: auto;}
+div#footer{width: 950px;height: 46px;margin: auto;background: url('http://www.technologuepro.com/themes/SP4XP/images/headerh.jpeg') repeat-x;background-position:0px -13px;color: #FFFFFF;}
+div#footer a, div#footer a:link, div#footer a:visited{color: #FFFFFF;text-decoration:none;font-weight:normal;}
+div#footer a:hover, div#footer a:active{color:#000000;}
+div#footer div#left{width: 15%;float: left;padding: 14px 0px 0px 66px;}
+div#footer div#left div#text{padding: 14px 0px 0px 66px;}
+div#footer div#right{width: 15%;float: left;padding: 4px 10px 0px 0px;text-align: right;}
+div#footer div#right div#text{padding: 4px 10px 0px 0px;text-align: right;}
+div#footer div#mid{width: 70%;float: left;}
+div#footer div#mid div#text{text-align: center;padding: 6px 0px 0px 0px;}
+div#gauche div.block{padding: 10px 2px 0px 0px;}
+div#gauche div.block div.cadre{background: #2A4DAB;padding: 1px;}
+div#gauche div.block div.cadre div.titre{width: 100%;height: 22px;background: url('http://www.technologuepro.com/themes/SP4XP/images/headerh.jpeg') repeat-x;background-position:0px -104px;color: #FFFFFF;font-weight:bold;}
+div#gauche div.block div.cadre div.titre div.text{padding: 4px 0px 0px 4px;}
+div#gauche div.block div.cadre div.contenu {width: 100%;height: 100%;background: #FFFFFF;}
+div#gauche div.block div.cadre div.contenu div.text{padding: 4px;}
+div#centre div.block{padding: 10px;}
+div#centre div.block div.cadre{background: #2A4DAB;padding: 1px;}
+div#centre div.block div.cadre div.titre{width: 100%;height: 22px;background: url('http://www.technologuepro.com/themes/SP4XP/images/headerh.jpeg') repeat-x;background-position:0px -104px;color: #FFFFFF;font-weight:bold;}
+div#centre div.block div.cadre div.titre  div.text{padding: 4px 0px 0px 4px;}
+div#centre div.block div.cadre div.contenu{width: 100%;height: 100%;background: #F0EFF2;}
+div#centre div.block div.cadre div.contenu div.text{padding: 4px;}
+div#centre div.block div.cadre div.bas{width: 100%;height: 17px;background: url('http://www.technologuepro.com/themes/SP4XP/images/headerh.jpeg') repeat-x;background-position:0px -153px;}
+div#centre div.block div.cadre div.bas div.infoNews{padding: 3px 10px 0px 0px;text-align: right;}
+div#droite div.block {padding: 10px 0px 0px 0px;color: #000000;}
+div#droite div.block div.cadre{background: #D6D5D9;padding: 1px;}
+div#droite div.block div.cadre div.titre{width: 100%;height: 24px;background: url('http://www.technologuepro.com/themes/SP4XP/images/headerh.jpeg') repeat-x;background-position:0px -130px;font-weight:bold;}
+div#droite div.block div.cadre div.titre div.text{padding: 5px 0px 0px 4px;}
+div#droite div.block div.cadre div.contenu{width: 100%;height: 100%;background: #EFEEF0;}
+div#droite div.block div.cadre div.contenu div.text{padding: 4px;}
+div#droite div.block div.cadre div.bas{width: 100%;height: 3px;background: url('http://www.technologuepro.com/themes/SP4XP/images/headerh.jpeg') repeat-x;background-position:0px -152px;}
+/*
+#social_hub{position:fixed;right:0;padding:0;margin-top:70px;}
+#social_hub span{display:block;position:absolute;top:-43px;left:-17px;width:140px;height:42px;background:url('http://www.technologuepro.com/themes/SP4XP/images/css-sprite.png') -50px 0 no-repeat;}
+#social_hub .liens{overflow:hidden;}
+#social_hub .liens a{display:block;position:relative;z-index:5;background:silver;width:137px;height:50px;margin-bottom:5px;text-indent:-9999px;}
+#social_hub #facebook{background:url('http://www.technologuepro.com/themes/SP4XP/images/css-sprite.png') -97px -267px no-repeat;}
+#social_hub #twitter{background:url('http://www.technologuepro.com/themes/SP4XP/images/css-sprite.png') -97px -317px no-repeat;}
+#social_hub #rss{background:url('http://www.technologuepro.com/themes/SP4XP/images/css-sprite.png') -97px -367px no-repeat;}
+#social_hub #email{background:url('http://www.technologuepro.com/themes/SP4XP/images/css-sprite.png') -97px -417px no-repeat;}
+*/
+.input{background:transparent url("http://www.technologuepro.com/themes/SP4XP/input.png");}
+.admin, .adminmenbre, .annonces, .annuaire, .articles, .calendrier, .chat, .compte, .contact, .cours, .edit_add, .feed, .forum, .galerie, .home, .jeux_flash, .livreor, .membre, .message_priv, .montage, .partenaires, .pfe, .recherche, .recomender, .stat, .telechargement, .td, .TP-electricite, .Projets-fin-etudes{	background:transparent url("http://www.technologuepro.com/themes/SP4XP/pucesh.png") no-repeat 22px 0;padding:.54em 0 .54em 1.5em;}
+.cat1, .cat2, .cat3, .cat4, .cat5, .cat6, .cat7, .cat8, .cat9, .cat10{background:transparent url("http://www.technologuepro.com/themes/SP4XP/pucesh.png") no-repeat 40px 0;padding:.80em 0 .80em 2.8em;}
+.admin{background-position:0px -23px;}
+.adminmenbre {background-position:0px -63px;}
+.annonces {background-position:0px -108px;}
+.annuaire {background-position:0px -148px;}
+.articles{background-position:0px -186px;}
+.calendrier{background-position:0px -222px;}
+.chat{background-position:0px -263px;}
+.compte{background-position:0px -308px;}
+.contact{background-position:0px -352px;}
+.cours{background-position:0px -396px;}
+.edit_add{background-position:0px -438px;}
+.feed{background-position:0px -476px;}
+.forum{background-position:0px -512px;}
+.galerie{background-position:0px -548px;}
+.home{background-position:0px -582px;}
+.jeux_flash{background-position:0px -622px;}
+.livreor{background-position:0px -664px;}
+.membre{background-position:0px -706px;}
+.message_priv{background-position:0px -746px;}
+.montage{background-position:0px -790px;}
+.partenaires{background-position:0px -826px;}
+.pfe{background-position:0px -868px;}
+.recherche{background-position:0px -908px;}
+.recomender{background-position:0px -948px;}
+.stat{background-position:0px -995px;}
+.telechargement{background-position:0px -1040px;}
+.td{background-position:0px -1077px;}
+.cat1{background-position:2px -1225px;}
+.cat2{background-position:2px -1173px;}
+.cat3{background-position:2px -2215px;}
+.cat4{background-position:2px -1477px;}
+.cat5{background-position:2px -1350px;}
+.cat6{background-position:2px -1285px;}
+.cat7{background-position:2px -1543px;}
+.cat8{background-position:2px -1173px;}
+.cat9{background-position:2px -1117px;}
+.cat10{background-position:2px -1415px;}
+.TP-electricite{background-position:2px -1608px;}
+.Projets-fin-etudes{background-position:2px -1656px;}
+.login-pseudo, .login-pass{background:transparent url("http://www.technologuepro.com/themes/SP4XP/images/login.png") no-repeat ;}
+.login-pseudo{background-position:0px Opx;display:block;height:21px;width:116px;}
+.login-pass{background-position:0px -22px;display:block;height:22px;width:116px;}
+.login a{color: #FFFFFF;}
+.login a:hover{color:#000000;}
+#myGallery, #myGallerySet, #flickrGallery{width: 99%;height: 180px;z-index:5;border: 1px solid #000;}
+.jdGallery a{outline:0;}
+.jdGallery{overflow: hidden;position: relative;}
+.jdGallery .slideElement{width: 100%;height: 100%;background-color: #000;background-repeat: no-repeat;background-position: center center;background-image: url('img/loading-bar-black.gif');}
+.jdGallery .loadingElement{width: 100%;height: 100%;position: absolute;left: 0;top: 0;background-color: #000;background-repeat: no-repeat;background-position: center center;background-image: url('img/loading-bar-black.gif');}
+.jdGallery .slideInfoZone{position: absolute;z-index: 10;width: 100%;margin: 0px;left: 0;bottom: 0;height: 50px;background: #333;color: #fff;text-indent: 0;overflow: hidden;}
+.jdGallery .slideInfoZone h2{padding: 0;font-size: 120%;margin: 0;margin: 2px 5px;font-weight: bold;color: inherit;}
+.jdGallery .slideInfoZone p{padding: 0;font-size: 90%;margin: 2px 5px;color: #eee;}
+.jdGallery div.carouselContainer{position: absolute;height: 135px;width: 100%;z-index: 10;margin: 0px;left: 0;top: 0;}
+.jdGallery a.carouselBtn{position: absolute;bottom: 0;right: 30px;height: 20px;text-align: center;padding: 0 10px;font-size: 13px;background: #333;color: #fff;cursor: pointer;}
+.jdGallery .carousel{position: absolute;width: 100%;margin: 0px;left: 0;top: 0;height: 115px;background: #333;color: #fff;text-indent: 0;overflow: hidden;}
+.jdGallery .carousel .carouselWrapper, .jdExtCarousel .carouselWrapper{position: absolute;width: 100%;height: 78px;top: 10px;left: 0;overflow: hidden;}
+.jdGallery .carousel .carouselInner, .jdExtCarousel .carouselInner{position: relative;}
+.jdGallery .carousel .carouselInner .thumbnail, .jdExtCarousel .carouselInner .thumbnail{cursor: pointer;background: #000;background-position: center center;float: left;border: solid 1px #fff;}
+.jdGallery .carousel .label, .jdExtCarousel .label{font-size: 13px;position: absolute;bottom: 5px;left: 10px;padding: 0;margin: 0;}
+.jdGallery a{font-size: 100%;text-decoration: none;color: inherit;}
+.jdGallery a.right, .jdGallery a.left{position: absolute;height: 99%;width: 25%;cursor: pointer;z-index:10;filter:alpha(opacity=20);-moz-opacity:0.2;-khtml-opacity: 0.2;opacity: 0.2;}
+.jdGallery a.right:hover, .jdGallery a.left:hover{filter:alpha(opacity=80);-moz-opacity:0.8;-khtml-opacity: 0.8;opacity: 0.8;}
+.jdGallery a.left{left: 0;top: 0;background: url('img/fleche1.png') no-repeat center left;}
+.jdGallery a.right{right: 0;top: 0;background: url('img/fleche2.png') no-repeat center right;}
+.jdGallery a.open{left: 0;top: 0;width: 100%;height: 100%;}
+.withArrows a.open{position: absolute;top: 0;left: 25%;height: 99%;width: 50%;cursor: pointer;z-index: 10;background: none;-moz-opacity:0.8;-khtml-opacity: 0.8;opacity: 0.8;}
+.withArrows a.open:hover { background: url('img/open.png') no-repeat center center; }
+* html .withArrows a.open:hover { background: url('img/open.gif') no-repeat center center;filter:alpha(opacity=80); }
+.tabberlive .tabbertabhide{display:none;}
+.tabber{}
+.tabberlive{margin-top:1em;}
+ul.tabbernav{margin:0;padding:3px 0;border-bottom:1px solid #778;font:bold 12px Verdana, sans-serif;}
+ul.tabbernav li{list-style:none;margin:0;display:inline;}
+ul.tabbernav li a{padding:3px 0.5em;margin-left:3px;border:1px solid #778;border-bottom:none;background:#DDE;text-decoration:none;}
+ul.tabbernav li a:link{color:#448;}
+ul.tabbernav li a:visited{color:#667;}
+ul.tabbernav li a:hover{color:#000;background:#AAE;border-color:#227;}
+ul.tabbernav li.tabberactive a{background-color:#fff;border-bottom:1px solid #fff;}
+ul.tabbernav li.tabberactive a:hover{color:#000;background:white;border-bottom:1px solid white;}
+.tabberlive .tabbertab{padding:5px;border:1px solid #aaa;border-top:0;}
+.tabberlive .tabbertab h2{display:none;}
+.tabberlive .tabbertab h3{display:none;}
+.tabberlive#tab1{}
+.tabberlive#tab2{}
+.tabberlive#tab2 .tabbertab{height:200px;overflow:auto;}
+.facebook{background:transparent url("http://www.technologuepro.com/themes/SP4XP/images/facebook.PNG");}
